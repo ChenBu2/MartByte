@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Basic page needs
+		============================================ -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>陈不二</title>
+
+	<!-- Mobile specific metas
+		============================================ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Google web fonts
+		============================================ -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet'
+		type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Favicon
+		============================================ -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+	<!-- ALL CSS FILES  -->
+	<!-- Bootstrap CSS
+		============================================ -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome CSS
+		============================================ -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- owl.carousel CSS
+		============================================ -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<!-- animate CSS
+		============================================ -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- main CSS
+		============================================ -->
+	<link rel="stylesheet" href="style.css">
+	<!-- responsive CSS
+		============================================ -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- prettyPhoto CSS
+		============================================ -->
+	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<!-- modernizr js
+		============================================ -->
+	<script src="js/modernizr.js"></script>
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<!-- endinject -->
+	<style>
+		@keyframes cmBounceInUp {
+
+			from,
+			60%,
+			75%,
+			90%,
+			to {
+				animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
+
+			from {
+				opacity: 0;
+				transform: translate3d(0, 10px, 0);
+			}
+
+			60% {
+				opacity: 1;
+				transform: translate3d(0, -5px, 0);
+			}
+
+			75% {
+				transform: translate3d(0, 5px, 0);
+			}
+
+			90% {
+				transform: translate3d(0, -2px, 0);
+			}
+
+			to {
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		.cm-bounce-in-up {
+			animation-name: cmBounceInUp;
+		}
+
+		.animated {
+			animation-duration: 1s;
+			animation-fill-mode: both;
+		}
+
+		.cm-contact-us-container {
+			position: fixed;
+			right: 50px;
+			bottom: 50px;
+		}
+
+		.cm-contact-us-container .cm-contact-us-content {
+			position: relative;
+		}
+
+		.cm-contact-us-container .cm-button-container .cm-button {
+			font-size: 14px;
+			padding: 0 14px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 100px;
+			color: #FFFFFF;
+			background: #0069C4;
+			border: 1px solid rgba(0, 0, 0, .05);
+			text-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+			cursor: pointer;
+			transform-origin: center bottom;
+			transition: all .2s ease-out;
+		}
+
+		.cm-contact-us-container .cm-button-container .cm-button:hover {
+			transform: scale(1.05);
+		}
+
+		.cm-contact-us-container .cm-button-container .cm-button img {
+			height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+
+		.cm-pop-container {
+			border-radius: 4px;
+			background: #FFF;
+			position: absolute;
+			width: 168px;
+			height: 190px;
+			top: -205px;
+			left: 50%;
+			margin-left: -84px;
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+			display: none;
+		}
+
+		.cm-pop-container:before {
+			content: ' ';
+			position: absolute;
+			bottom: -5px;
+			left: 50%;
+			width: 10px;
+			height: 10px;
+			border: 1px solid #d8dde4;
+			border-right-color: transparent;
+			border-bottom-color: transparent;
+			transform: rotate(-135deg);
+			background: #fff;
+			z-index: 1;
+			margin-left: -6px;
+			border-radius: 2px;
+		}
+
+		.cm-pop-container .cm-title {
+			color: #2a465e;
+			font-size: 12px;
+			line-height: 17px;
+			padding: 10px 0;
+			margin: 0 14px;
+			border-bottom: .5px solid #d8dde4;
+			text-align: center;
+		}
+
+		.cm-pop-container .cm-qr {
+			padding: 7px;
+		}
+
+		.cm-pop-container .cm-qr img {
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+	<!-- HEADER START -->
+	<div id="navbar-main">
+		<!-- FIXED NAVBAR -->
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!-- LOGO -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+				</div>
+				<!-- / END LOGO -->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li> <a href="#home" class="smoothScroll">主页</a></li>
+						<li> <a href="#about" class="smoothScroll"> 关于</a></li>
+						<li> <a href="#services" class="smoothScroll"> 服务</a></li>
+						<li> <a href="#skill" class="smoothScroll"> 技能</a></li>
+						<li> <a href="#team" class="smoothScroll"> 团队</a></li>
+						<li> <a href="#gallery" class="smoothScroll"> 往期</a></li>
+						<li> <a href="#pricing" class="smoothScroll"> 价格</a></li>
+						<li> <a href="#testimonials" class="smoothScroll"> 奖励</a></li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle js-activated" href="#">博客 <span
+									class="caret"></span></a>
+							<ul role="menu" class="dropdown-menu">
+								<!-- <li><a href="blog.html">博客</a></li> -->
+								<li><a href="http://www.chenbu2.com/">博客</a></li>
+							</ul>
+						</li>
+						<li> <a href="#contact" class="smoothScroll"> 联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / END HEADER -->
+
+	<!-- HOME CAROUSEL START -->
+	<section id="home">
+		<div id="fn-home-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+			<a class="item-prev" href="#fn-home-carousel" role="button" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="item-next" href="#fn-home-carousel" role="button" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/slider/slide-1.jpg" alt="First slide" class="img-responsive">
+					<div class="carousel-caption">
+						<h1 class="animated fadeInDown delay-1">太棒了 <span> 赢家</span></h1>
+						<p class="animated fadeInDown delay-3">在瞬间建立美丽和专业的网站</p>
+						<a class="btn animated fadeInUp delay-4" href="#">了解 更多</a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="images/slider/slide-2.jpg" alt="Second slide" class="img-responsive">
+					<div class="carousel-caption">
+						<h1 class="animated fadeInDown delay-1">完全 <span> 响应</span></h1>
+						<p class="animated fadeInDown delay-3">对不起， 可能是网络无连接， 不能为您提供相关翻译结果 </p>
+						<a class="btn animated fadeInUp delay-4" href="#">了解 更多</a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="images/slider/slide-3.jpg" alt="Third slide" class="img-responsive">
+					<div class="carousel-caption">
+						<h1 class="animated fadeInDown delay-1">现代和 <span> 优雅的</span></h1>
+						<p class="animated fadeInDown delay-3">一个具有大量特性的解决方案设计</p>
+						<a class="btn animated fadeInUp delay-4" href="#">了解 更多</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / END HOME CAROUSEL -->
+
+	<!-- ABOUT SECTION START -->
+	<section id="about" class="section-padding about-us">
+		<div class="container">
+			<div class="row">
+				<!-- SECTION HEADER -->
+				<div class="fn-section-header">
+					<h2 class="section-title text-center">关于我们的代理商</h2>
+					<p class="text-center">这一发现不仅危及大型婚礼，还有Flynn和Provenza
+						<br>计划将这支队伍带入 七月四日的棒球比赛。</p>
+				</div>
+				<!-- / END SECTION HEADER -->
+				<!-- ABOUT CLIENT 1 -->
+				<div class="wow flipInX animated col-sm-4 col-md-4 text-center">
+					<div class="icon-circle">
+						<i class="fa fa-gg"></i>
+					</div>
+					<div class="about-us-content text-center">
+						<h3>创作</h3>
+						<p>这是一个长期存在的事实，读者在查看其布局时将是页面。</p>
+					</div>
+				</div>
+				<!-- ABOUT CLIENT 2 -->
+				<div class="wow flipInX animated col-sm-4 col-md-4 text-center">
+					<div class="icon-circle">
+						<i class="fa fa-lightbulb-o"></i>
+					</div>
+					<div class="about-us-content text-center">
+						<h3>独特</h3>
+						<p>这是一个长期存在的事实，读者在查看其布局时将是页面。</p>
+					</div>
+				</div>
+				<!-- ABOUT CLIENT 3 -->
+				<div class="wow flipInX animated col-sm-4 col-md-4 text-center">
+					<div class="icon-circle">
+						<i class="fa fa-cog"></i>
+					</div>
+					<div class="about-us-content text-center">
+						<h3>激情</h3>
+						<p>这是一个长期存在的事实，读者在查看其布局时将是页面。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END ABOUT SECTION -->
+
+	<!-- SERVICES SECTION START -->
+	<section id="services" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<!-- SECTION HEADER -->
+				<div class="fn-section-header">
+					<h2 class="section-title-white text-center">我们提供的服务</h2>
+					<p class="text-center">卡伦解决了中国工人罢工后的暴力事件。与此同时,杜兰特
+						<br>把米奇拉进联合太平洋的生意。</p>
+				</div>
+				<!-- / END SECTION HEADER -->
+				<!-- SERVICE 1 -->
+				<div class="col-md-4">
+					<div data-wow-delay=".1s" class="service-item fadeInLeft wow animated"
+						style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+						<div class="service-icon">
+							<div class="inner"><i class="fa fa-desktop"></i></div>
+						</div>
+						<div class="service-detail">
+							<h4>网页设计</h4>
+							<p>Laculis ullamcorper at est. Curabitur射手dignissim nibh想要口述。
+								悬挂车辆arcusit amet前庭congue。在ac mi之前。</p>
+						</div>
+					</div>
+				</div>
+				<!-- SERVICE 2 -->
+				<div class="col-md-4">
+					<div data-wow-delay=".3s" class="service-item fadeInDown wow animated"
+						style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">
+						<div class="service-icon">
+							<div class="inner"><i class="fa fa-cogs"></i></div>
+						</div>
+						<div class="service-detail">
+							<h4>网页设计</h4>
+							<p>Laculis ullamcorper at est. Curabitur射手dignissim nibh想要口述。
+								悬挂车辆arcusit amet前庭congue。在ac mi之前。</p>
+						</div>
+					</div>
+				</div>
+				<!-- SERVICE 3 -->
+				<div class="col-md-4">
+					<div data-wow-delay=".5s" class="service-item fadeInRight wow animated"
+						style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+						<div class="service-icon">
+							<div class="inner"><i class="fa fa-globe"></i></div>
+						</div>
+						<div class="service-detail">
+							<h4>品牌设定</h4>
+							<p>Laculis ullamcorper at est. Curabitur射手dignissim nibh想要口述。
+								悬挂车辆arcusit amet前庭congue。在ac mi之前。</p>
+						</div>
+					</div>
+				</div>
+				<!-- SERVICE 4 -->
+				<div class="col-md-4">
+					<div data-wow-delay=".7s" class="service-item fadeInLeft wow animated"
+						style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+						<div class="service-icon">
+							<div class="inner"><i class="fa fa-camera-retro"></i></div>
+						</div>
+						<div class="service-detail">
+							<h4>Api 定制</h4>
+							<p>Laculis ullamcorper at est. Curabitur射手dignissim nibh想要口述。
+								悬挂车辆arcusit amet前庭congue。在ac mi之前。</p>
+						</div>
+					</div>
+				</div>
+				<!-- SERVICE 5 -->
+				<div class="col-md-4">
+					<div data-wow-delay=".9s" class="service-item fadeInUp wow animated"
+						style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
+						<div class="service-icon">
+							<div class="inner"><i class="fa fa-calculator"></i></div>
+						</div>
+						<div class="service-detail">
+							<h4>数字营销</h4>
+							<p>Laculis ullamcorper at est. Curabitur射手dignissim nibh想要口述。
+								悬挂车辆arcusit amet前庭congue。在ac mi之前。</p>
+						</div>
+					</div>
+				</div>
+				<!-- SERVICE 6 -->
+				<div class="col-md-4">
+					<div data-wow-delay="1.1s" class="service-item fadeInRight wow animated"
+						style="visibility: visible; animation-delay: 1.1s; animation-name: fadeInRight;">
+						<div class="service-icon">
+							<div class="inner"><i class="fa fa-line-chart"></i></div>
+						</div>
+						<div class="service-detail">
+							<h4>网页分析</h4>
+							<p>Laculis ullamcorper at est. Curabitur射手dignissim nibh想要口述。
+								悬挂车辆arcusit amet前庭congue。在ac mi之前。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / END SERVICES SECTION -->
+
+	<!-- SKILL SECTION START -->
+	<div id="skill" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<!-- SECTION HEADER -->
+					<div class="fn-section-header">
+						<h2 class="section-title">我们强大的技能</h2>
+						<span class="text-center">卡伦解决了中国的一次罢工</span>
+					</div>
+					<!-- / END SECTION HEADER -->
+					<p>巴斯·沃森第一次作为预备役军官驾车经过时发现了一具尸体。不仅仅是发现
+						危及一场大款婚礼，但也危及弗林和普罗文茨把球队带到7月4日的计划
+						棒球比赛。<br>
+						Preggoland讲述了露丝的故事，一个35岁的女人假装怀孕来适应她
+						朋友。虽然露丝一开始试图坦白，但怀孕的好处太诱人了，不容忽视
+						她很快发现自己生活在谎言中。班纳特主演的索尼娅。<br>
+						拉菲担心希尔迪持续的谋杀调查将影响她自己的案子。同时，还有一支防守队伍
+						招募一位知名律师。
+					</p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="skill-header"></div>
+					<div class="skill">
+						<div class="progress-wrap">
+							<h3>软件开发</h3>
+							<div class="progress">
+								<div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100" style="width: 90%">
+									<span class="bar-width">90%</span>
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3>移动应用程序</h3>
+							<div class="progress">
+								<div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+									aria-valuemax="100" style="width: 80%">
+									<span class="bar-width">80%</span>
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3>平面设计</h3>
+							<div class="progress">
+								<div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+									aria-valuemax="100" style="width: 95%">
+									<span class="bar-width">95%</span>
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3>网页设计</h3>
+							<div class="progress">
+								<div class="progress-bar color1" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+									aria-valuemax="100" style="width: 85%">
+									<span class="bar-width">85%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END SKILL START -->
+
+	<!-- PROMO BUTTON START -->
+	<section class="promo-button">
+		<div class="container">
+			<div class="col-md-9 col-sm-7">
+				<h2>您的公司需要一个很棒的网站吗?</h2>
+			</div>
+			<div class="col-md-3 col-sm-5"><a href="#" class="promo-btn">点我报价</a></div>
+		</div>
+	</section>
+	<!-- /END PROMO BUTTON -->
+
+	<!-- TEAM MEMBERS START -->
+	<div id="team" class="inner-padding">
+		<div class="container">
+			<div class="row centered wow flipInX animated" data-wow-offset="30" data-wow-duration="1.5s"
+				data-wow-delay="0.15s">
+				<!-- SECTION HEADER -->
+				<div class="fn-section-header">
+					<h2 class="section-title text-center">团队介绍</h2>
+					<p class="text-center">我们团队都是来自BAT等一线互联网公司<br>
+						工作经验都是3年以上。</p>
+				</div>
+				<!-- / END SECTION HEADER -->
+				<!-- MEMBER 1 -->
+				<div class="col-xs-12 col-sm-3 col-md-3 centered single-member">
+					<img class="member-img" src="images/team/team01.png" alt="Maura Daniels">
+					<div class="member-overlay">
+						<div class="member-details">
+							<h4>杰克Brianel</h4>
+							<span>网页开发</span>
+							<div class="social-profiles">
+								<a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i
+										class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- MEMBER 2 -->
+				<div class="col-xs-12 col-sm-3 col-md-3 centered single-member">
+					<img class="member-img" src="images/team/team02.png" alt="Tom Petterson">
+					<div class="member-overlay">
+						<div class="member-details">
+							<h4>丹尼尔·帕斯捷尔纳克</h4>
+							<span>Progemmer</span>
+							<div class="social-profiles">
+								<a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i
+										class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- MEMBER 3 -->
+				<div class="col-xs-12 col-sm-3 col-md-3 centered single-member">
+					<img class="member-img" src="images/team/team03.png" alt="Anna Hanaceck">
+					<div class="member-overlay">
+						<div class="member-details">
+							<h4>丹尼尔斯莫拉</h4>
+							<span>平面设计</span>
+							<div class="social-profiles">
+								<a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i
+										class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- MEMBER 4 -->
+				<div class="col-xs-12 col-sm-3 col-md-3 centered single-member">
+					<img class="member-img" src="images/team/team04.png" alt="Jack Brianel">
+					<div class="member-overlay">
+						<div class="member-details">
+							<h4>迈克尔·</h4>
+							<span>开发人员</span>
+							<div class="social-profiles">
+								<a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i
+										class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="" style="height:15px;background:#66CBFF"></div>
+	</div>
+	<!-- / END TEAM MEMBERS -->
+
+	<!-- GALLERY SECTION START -->
+	<section id="gallery" class="section-padding">
+		<div class="container">
+			<!-- SECTION HEADER -->
+			<div class="fn-section-header">
+				<h2 class="section-title text-center">往期案例</h2>
+				<p class="text-center">从15年到现在，我们开发过的项目已经有20+（不包含迭代版本）。项目包含社交（社区）、电商、旅游、直播等<br>
+					这里我们只展示最近的项目截图</p>
+			</div>
+			<!-- / END SECTION HEADER -->
+			<!-- GALLERY FILTER -->
+			<div class="text-center">
+				<ul class="gallery-filter">
+					<li><a class="active" href="#" data-filter="*">All</a>
+					</li>
+					<li><a href="#" data-filter=".webdesign">网站</a>
+					</li>
+					<li><a href="#" data-filter=".webdevelopment">小程序</a>
+					</li>
+					<li><a href="#" data-filter=".photography">APP</a>
+					</li>
+				</ul>
+			</div>
+			<!-- GALLERY ITEMS -->
+			<div class="gallery-items wow bounceInUp animated" data-wow-offset="30" data-wow-duration="1.5s"
+				data-wow-delay="0.15s">
+				<!-- GALLERY ITEM 1 -->
+				<div class="gallery-item webdevelopment">
+					<div class="gallery-item-inner">
+						<img class="img-responsive" src="images/gallery/01.jpg" alt="">
+						<div class="gallery-info">
+							<h3>Project title</h3>
+							<p class="hidden-xs hidden-sm">这个动画冒险发现兔八哥卷入了一个阴谋。</p>
+							<a class="preview" href="images/gallery/big_img_01.jpg" data-gal="prettyPhoto"><i
+									class="fa fa-eye"></i></a>
+							<a class="projecturl" href="#"><i class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- GALLERY ITEM 2 -->
+				<div class="gallery-item photography webdesign">
+					<div class="gallery-item-inner">
+						<img class="img-responsive" src="images/gallery/02.jpg" alt="">
+						<div class="gallery-info">
+							<h3>Project title</h3>
+							<p class="hidden-xs hidden-sm">这个动画冒险发现兔八哥卷入了一个阴谋。</p>
+							<a class="preview" href="images/gallery/big_img_02.jpg" data-gal="prettyPhoto"><i
+									class="fa fa-eye"></i></a>
+							<a class="projecturl" href="#"><i class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- GALLERY ITEM 3 -->
+				<div class="gallery-item photography webdevelopment">
+					<div class="gallery-item-inner">
+						<img class="img-responsive" src="images/gallery/03.jpg" alt="">
+						<div class="gallery-info">
+							<h3>Project title</h3>
+							<p class="hidden-xs hidden-sm">这个动画冒险发现兔八哥卷入了一个阴谋。</p>
+							<a class="preview" href="images/gallery/big_img_03.jpg" data-gal="prettyPhoto"><i
+									class="fa fa-eye"></i></a>
+							<a class="projecturl" href="#"><i class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- GALLERY ITEM 4 -->
+				<div class="gallery-item webdesign">
+					<div class="gallery-item-inner">
+						<img class="img-responsive" src="images/gallery/04.jpg" alt="">
+						<div class="gallery-info">
+							<h3>Project title</h3>
+							<p class="hidden-xs hidden-sm">这个动画冒险发现兔八哥卷入了一个阴谋。</p>
+							<a class="preview" href="images/gallery/big_img_04.jpg" data-gal="prettyPhoto"><i
+									class="fa fa-eye"></i></a>
+							<a class="projecturl" href="#"><i class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- GALLERY ITEM 5 -->
+				<div class="gallery-item webdevelopment nature">
+					<div class="gallery-item-inner">
+						<img class="img-responsive" src="images/gallery/05.jpg" alt="">
+						<div class="gallery-info">
+							<h3>Project title</h3>
+							<p class="hidden-xs hidden-sm">这个动画冒险发现兔八哥卷入了一个阴谋。</p>
+							<a class="preview" href="images/gallery/big_img_05.jpg" data-gal="prettyPhoto"><i
+									class="fa fa-eye"></i></a>
+							<a class="projecturl" href="#"><i class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- GALLERY ITEM 6 -->
+				<div class="gallery-item photography">
+					<div class="gallery-item-inner">
+						<img class="img-responsive" src="images/gallery/06.jpg" alt="">
+						<div class="gallery-info">
+							<h3>Project title</h3>
+							<p class="hidden-xs hidden-sm">这个动画冒险发现兔八哥卷入了一个阴谋。</p>
+							<a class="preview" href="images/gallery/big_img_06.jpg" data-gal="prettyPhoto"><i
+									class="fa fa-eye"></i></a>
+							<a class="projecturl" href="#"><i class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- GALLERY ITEM 7 -->
+				<div class="gallery-item webdevelopment webdesign">
+					<div class="gallery-item-inner">
+						<img class="img-responsive" src="images/gallery/07.jpg" alt="">
+						<div class="gallery-info">
+							<h3>Project title</h3>
+							<p class="hidden-xs hidden-sm">这个动画冒险发现兔八哥卷入了一个阴谋。</p>
+							<a class="preview" href="images/gallery/big_img_07.jpg" data-gal="prettyPhoto"><i
+									class="fa fa-eye"></i></a>
+							<a class="projecturl" href="#"><i class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- GALLERY ITEM 8 -->
+				<div class="gallery-item webdesign photography">
+					<div class="gallery-item-inner">
+						<img class="img-responsive" src="images/gallery/08.jpg" alt="">
+						<div class="gallery-info">
+							<h3>Project title</h3>
+							<p class="hidden-xs hidden-sm">这个动画冒险发现兔八哥卷入了一个阴谋。</p>
+							<a class="preview" href="images/gallery/big_img_08.jpg" data-gal="prettyPhoto"><i
+									class="fa fa-eye"></i></a>
+							<a class="projecturl" href="#"><i class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / END GALLERY SECTION -->
+
+	<!-- PRICING TABLE SECTION START -->
+	<section id="pricing" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<!-- SECTION HEADER -->
+				<div class="fn-section-header">
+					<h2 class="section-title text-center">我们的定价</h2>
+					<p class="text-center">他是个车轮上的恶魔。大副是个勇敢而坚定的水手。
+						五名乘客 <br> 那一天启航去作一次三小时的游览。</p>
+				</div>
+				<!-- / END SECTION HEADER -->
+				<div class="pricing-table">
+					<div class="col-md-3 col-sm-6">
+						<div class="pricing-col">
+							<div class="pricing-wrapper">
+								<h2 class="headbg">基本包</h2>
+								<span>$199</span>
+								<h4>每个月</h4>
+							</div>
+							<div class="product-feature">
+								<ul>
+									<li>自由设置</li>
+									<li>10 GB 内测</li>
+									<li>10 用户</li>
+									<li>x</li>
+									<li>x</li>
+								</ul>
+							</div>
+							<div class="button-wrapper">
+								<div class="price-button"><a href="#" class="price-btn">了解更多</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="pricing-col">
+							<div class="pricing-wrapper">
+								<h2 class="headbg">标准</h2>
+								<span>$259</span>
+								<h4>每个月</h4>
+							</div>
+							<div class="product-feature">
+								<ul>
+									<li>自由设置</li>
+									<li>10 GB 内存</li>
+									<li>15 用户</li>
+									<li>增强的安全</li>
+									<li>x</li>
+								</ul>
+							</div>
+							<div class="button-wrapper">
+								<div class="price-button"><a href="#" class="price-btn">了解更多</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="pricing-col">
+							<div class="pricing-wrapper">
+								<h2 class="headbg">先进的</h2>
+								<span>$375</span>
+								<h4>每个月</h4>
+							</div>
+							<div class="product-feature">
+								<ul>
+									<li>自由设置</li>
+									<li>10 GB 内存</li>
+									<li>无限的用户</li>
+									<li>增强的安全</li>
+									<li>免费支持</li>
+								</ul>
+							</div>
+							<div class="button-wrapper">
+								<div class="price-button"><a href="#" class="price-btn">了解更多</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="pricing-col">
+							<div class="pricing-wrapper">
+								<h2 class="headbg">高级</h2>
+								<span>$499</span>
+								<h4>每个月</h4>
+							</div>
+							<div class="product-feature">
+								<ul>
+									<li>自由设置</li>
+									<li>15 GB 内存</li>
+									<li>无限的用户</li>
+									<li>增强的安全</li>
+									<li>免费支持</li>
+								</ul>
+							</div>
+							<div class="button-wrapper">
+								<div class="price-button"><a href="#" class="price-btn">了解更多</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h3>100% 退款保证。</h3>
+				<p>安吉拉和联邦调查局逼着汤米玩Lobos或者在监狱里度过余生， <br>而Ghost考虑
+					光荣的事。</p>
+			</div>
+		</div>
+	</section>
+	<!-- / END PRICING TABLE SECTION -->
+
+	<!-- PROMO BUTTON START -->
+	<section class="promo-button">
+		<div class="container">
+			<div class="col-md-9 col-sm-7">
+				<h2>为您的产品选择一个服务--></h2>
+			</div>
+			<div class="col-md-3 col-sm-5"><a href="#" class="promo-btn">现在就选</a></div>
+		</div>
+	</section>
+	<!-- /END PROMO BUTTON -->
+
+	<!-- TESTIMONIAL SECTION START -->
+	<section id="testimonials" class="testimonial section-padding">
+		<div class="container">
+			<!-- SECTION HEADER -->
+			<div class="fn-section-header">
+				<h2 class="section-title text-center">看看他们怎么说</h2>
+				<p class="text-center">一个选择可以改变你，也可以毁灭你。但每一个选择都有后果，
+					<br>随着她周围各派的动荡加剧。</p>
+			</div>
+			<!-- / END SECTION HEADER -->
+			<!-- TESTIMONIALS -->
+			<div class="row">
+				<div class="col-md-12">
+					<div id="testimonials-slider" class="carousel slide">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-xs-12 col-md-3 text-center testimonial-image">
+										<img class="img-circle" alt="..." src="images/testimonial/client01.jpg">
+									</div>
+									<div class="col-xs-12 col-md-9 testimonial-text">
+										<p class="subtext">
+											读者会被页面上可读的内容分散注意力，这是一个由来已久的事实
+											看看它的布局。使用Lorem Ipsum的意义是它有一个或多或少正常的
+											字母，而不是“这里的内容，这里的内容”，使它看起来像可读的英语。许多
+											桌面发布包和web页面编辑器现在使用Lorem Ipsum作为默认模型文本，
+											eb页面编辑器现在使用Lorem Ipsum作为默认模型文本，并搜索“Lorem Ipsum”
+											发现许多web站点仍然处于婴儿期。
+										</p>
+										<h4 class="testimonial-author">
+											约翰。史密斯
+											<small>
+												Rox design int经理。
+											</small>
+										</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-3 text-center testimonial-image">
+										<img class="img-circle" alt="Avatar" src="images/testimonial/client02.jpg">
+									</div>
+									<div class="col-xs-12 col-md-9 testimonial-text">
+										<p class="subtext">
+											巴斯·沃森第一次作为预备役军官驾车经过时发现了一具尸体。发现不
+											不仅危及一场大款婚礼，还危及弗林和普罗文茨把球队带到a
+											七月四日棒球赛。
+											拉菲担心希尔迪持续的谋杀调查将影响她自己的案子。与此同时,一个
+											辩护团队聘请了一位广受赞誉的律师，新出现的证据表明，检察官是
+											被谋杀的。
+										</p>
+										<h4 class="testimonial-author">
+											克里斯蒂娜•托
+											<small>
+												创始人Trademax Inc .)
+											</small>
+										</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-3 text-center testimonial-image">
+										<img class="img-circle" alt="Avatar" src="images/testimonial/client03.jpg">
+									</div>
+									<div class="col-xs-12 col-md-9 testimonial-text">
+										<p class="subtext">
+											读者会被页面上可读的内容分散注意力，这是一个由来已久的事实
+											看看它的布局。使用Lorem Ipsum的意义是它有一个或多或少正常的
+											字母，而不是“这里的内容，这里的内容”，使它看起来像可读的英语。许多
+											桌面发布包和web页面编辑器现在使用Lorem Ipsum作为默认模型文本，
+											eb页面编辑器现在使用Lorem Ipsum作为默认模型文本，并搜索“Lorem Ipsum”
+											发现许多web站点仍然处于婴儿期。
+										</p>
+										<h4 class="testimonial-author">
+											安东Kovalsky
+											<small>
+												Doctel LLC的创始人。
+											</small>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control visible-md visible-lg" href="#testimonials-slider"
+							data-slide="prev">
+							<i class="fa fa-chevron-left"></i>
+						</a>
+						<a class="right carousel-control visible-md visible-lg" href="#testimonials-slider"
+							data-slide="next">
+							<i class="fa fa-chevron-right"></i>
+						</a>
+
+						<ol class="carousel-indicators">
+							<li data-target="#testimonials-slider" data-slide-to="0" class="active"></li>
+							<li data-target="#testimonials-slider" data-slide-to="1"></li>
+							<li data-target="#testimonials-slider" data-slide-to="2"></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clients text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 col-md-3 client">
+						<img alt="clients" src="images/clients/logo-1.png">
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3 client">
+						<img alt="clients" src="images/clients/logo-2.png">
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3 client">
+						<img alt="clients" src="images/clients/logo-3.png">
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3 client">
+						<img alt="clients" src="images/clients/logo-4.png">
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3 client">
+						<img alt="clients" src="images/clients/logo-5.png">
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3 client">
+						<img alt="clients" src="images/clients/logo-6.png">
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3 client">
+						<img alt="clients" src="images/clients/logo-7.png">
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3 client">
+						<img alt="clients" src="images/clients/logo-8.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / END TESTIMONIAL SECTION -->
+
+	<!-- CONTACT SECTION START -->
+	<section id="contact" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<!-- SECTION HEADER -->
+				<div class="fn-section-header contact-header">
+					<h2 class="section-title text-center">与我们联系</h2>
+					<p class="text-center">卡伦解决了中国工人罢工后的暴力事件。</p>
+				</div>
+				<!-- / END SECTION HEADER -->
+				<!-- GOOGLE MAP START -->
+				<div class="col-md-6">
+					<div id="google-map">
+						<div id="map-canvas" class="wow animated fadeInUp">
+						</div>
+					</div>
+				</div>
+				<!-- / END GOOGLE MAP -->
+				<div class="col-md-6">
+					<div class="contact-form">
+						<form action="sendemail.php" id="contactus" method="post" class="form">
+							<div class="row">
+								<div class="col-xs-6 col-md-6 form-group">
+									<input class="form-control" id="name" name="cf_name" placeholder="Name" type="text"
+										required />
+								</div>
+								<div class="col-xs-6 col-md-6 form-group">
+									<input class="form-control" id="email" name="cf_email" placeholder="Email"
+										type="email" required />
+								</div>
+							</div>
+							<textarea class="form-control" id="message" name="cf_message" placeholder="Message"
+								rows="5"></textarea>
+							<div class="row">
+								<div class="col-xs-12 col-md-12">
+									<button class="btn btn btn-lg" type="submit">发送消息</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / END CONTACT SECTION -->
+
+	<!-- FOOTER SECTION START -->
+	<div id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="copyright">
+						<p>
+							121 King State Melbourne <br>
+							VIC 3000, Australia.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="copyright">
+						<p>
+							E-mail: chensan6@163.com<br>
+							Phone: +86 185 1933 0818
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="copyright">
+						<p>
+							<span>Copyright &copy; 2019.Company name All rights reserved.<a target="_blank"
+									href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / END FOOTER SECTION -->
+
+	<!-- ALL JS FILES HERE -->
+	<!-- jquery js -->
+	<script src="js/jquery.min.js"></script>
+	<!-- bootstrap js -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- retina js -->
+	<script type="text/javascript" src="js/retina.js"></script>
+	<!-- prettyPhoto js -->
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<!-- easing js -->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<!-- isotope js -->
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<!-- mousescroll js -->
+	<script type="text/javascript" src="js/mousescroll.js"></script>
+	<!-- smoothscroll js -->
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<!-- Jquery appear js -->
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<!-- inview js -->
+	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+	<!-- owl carousel js -->
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<!-- Google map -->
+
+	<!-- wow js -->
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!-- Main js -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<div>
+		<div class="cm-contact-us-container">
+			<div class="cm-contact-us-content">
+				<div class="cm-button-container">
+					<div class="cm-button" id="cm-contact-button">
+						<img src="images/qq.png">
+						联系我们
+					</div>
+				</div>
+				<div class="cm-pop-container animated cm-bounce-in-up" id="cm-contact-pop" data-show="false"
+				style="display: none;">
+					<div class="cm-title">在线咨询请添加客服 QQ</div>
+					<div class="cm-qr">
+						<img src="images/kefu-qq.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
